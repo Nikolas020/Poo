@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Grados</title>
+</head>
+<body>
+    <div>
+        <h1>Gestión de Alumnos y Grados</h1>
+        <div>
+            <h3>Agregar Alumno</h3>
+            <label for="nombre">Nombre:
+                <input type="text" id="nombre" required> 
+            </label>
+            <br><br>
+            <label for="edad">Edad:
+                <input type="number" id="edad" required>
+            </label>
+            <br><br>
+            <label for="tipoCurso">Tipo de Curso:</label>
+            <select id="tipoCurso" required>
+                <option value="online" >Curso Online</option>
+                <option value="presencial">Curso Presencial</option>
+            </select>
+            <br><br>
+            <button id="AgregarCurso" >Agregar Curso</button>
+            <br><br>
+            <button id="AgregarAlumno">Agregar Alumno al Curso</button>
+            <br><br>
+        </div>
+    
+        <div>
+            <h2>Agregar Calificación:</h2>
+            <input type="number" id="calificacion" placeholder="Ingrese calificación" required>
+            <button id="AgregarCalificacion">Agregar</button>
+        </div>
+        
+        <div>
+            <h2>Mostrar Calificaciones</h2>
+            <ul id="listaCalificaciones"></ul>
+            <button id="MostrarPromedio">Mostrar Promedio</button>
+        </div>
+    
+        <p id="Resultado"></p>
+</body>
+<script src="SistemaGrado.js"></script>
+</html>

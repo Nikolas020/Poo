@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Agregar Masacota</h1>
+
+    <form id="masacota">
+        <label for="ndombre">Nombre de la masacota:</label>
+        <input type="text" id="nombre" required><br><br>
+
+        <label for="tipo">Tipo de masacota:</label>
+        <select id="tipo" required>
+            <option value="">Selecciona un tipo</option>
+            <option value="Perro">Perro</option>
+            <option value="Gato">Gato</option>
+        </select><br><br>
+
+        <button id="Agregar" type="button">Agregar Masacota</button>
+    </form>
+
+    <h2>Masacotas Registradas</h2>
+    <ul id="listaM"></ul>
+</body>
+<script src="TiendaPyg.js"></script>
+</html>

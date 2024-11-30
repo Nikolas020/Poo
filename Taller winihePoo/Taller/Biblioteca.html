@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Libros</title>
+</head>
+<body>
+    <h1>Biblioteca</h1>
+
+    <h2>Registrar un Libro</h2>
+    <form id="libro">
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" required><br><br>
+
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" required><br><br>
+
+        <label for="tipo">Tipo de Libro:</label>
+        <select id="tipo">
+            <option value="digital">Digital</option>
+            <option value="fisico">Físico</option>
+        </select><br><br>
+
+        <label for="plataforma">Plataforma:</label>
+        <input type="text" id="plataforma"><br><br>
+
+        <label for="fechaPublicacion">Fecha de Publicación:</label>
+        <input type="date" id="fechaPublicacion"><br><br>
+
+        <button id="registrar" type="button">Registrar Libro</button>
+    </form>
+
+    <h2>Buscar libros por autor</h2>
+    <input type="text" id="buscarAutor" placeholder="Nombre del autor">
+    <button id="buscarA">Buscar</button>
+
+    <h2>Lista de Libros</h2>
+    <ul id="List"></ul>
+    <h2>Autores</h2>
+    <ul id="Autores"></ul>
+
+    <script src="Biblioteca.js"></script>
+</body>
+</html>

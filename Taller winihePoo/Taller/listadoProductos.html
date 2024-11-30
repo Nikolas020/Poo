@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Productos</title>
+</head>
+<body>
+    <h1>Lista de Productos</h1>
+    <h3>Agregar Producto</h3>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" placeholder="Ingrese el nombre del producto" required>
+    <br><br>
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" placeholder="Ingrese el precio" required>
+    <br><br>
+    <label for="cantidad">Cantidad en Stock:</label>
+    <input type="number" id="cantidad" placeholder="Ingrese la cantidad en stock" required>
+    <br><br>
+    <label for="marca">Marca (solo para electrodomésticos):</label>
+    <input type="text" id="marca" placeholder="Ingrese la marca">
+    <br><br>
+    <button id="agregarProducto">Agregar Producto</button>
+    <button id="listarBajoStock">Listar Productos con Bajo Stock</button>
+    <h3>Productos Agregados:</h3>
+    <ul id="listaProductos"></ul>
+    <h3>Productos con Bajo Stock (10):</h3>
+    <ul id="listaBajoStock"></ul>
+    <script src="listadoProductos.js"></script>
+</body>
+</html>
